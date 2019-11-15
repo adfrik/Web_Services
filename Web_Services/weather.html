@@ -137,9 +137,9 @@
 
 				*/
 				var week_names = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; //This is a helper array to help convert the day of the week [0-7] to a named value [Sunday - Saturday]
-        var divs = "";
-        var unix_time = data.currently.time;//Retrieve the current timestamp
-				var javascript_time = new Date(unix_time * 1000);//Convert the unix time stamp to javascript
+        			var divs = "";
+        			var unix_time = data.currently.time;
+				var javascript_time = new Date(unix_time * 1000);
 				var today = javascript_time.getDay();
 				for(var i = 0; i < 6; i++){
 					var dd = data.daily.data[i] //dailydata
@@ -155,7 +155,7 @@
 					'</div>';
 				}
 
-        document.getElementById('6_day_forecast').innerHTML = divs;
+        		document.getElementById('6_day_forecast').innerHTML = divs;
 			})
 		})
  	</script>
